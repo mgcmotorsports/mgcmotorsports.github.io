@@ -39,13 +39,23 @@
     }
 
     .hero-content {
-      opacity: 0;
-      transform: translateY(18px);
-      animation: fadeInUp 1.2s ease forwards;
-      animation-delay: .35s;
+      text-align: center;
 }
 
-@keyframes fadeInUp {
+.hero-content h1 {
+    opacity: 0;
+    transform: translateY(18px);
+    animation: fadeUp 1.0s ease forwards;
+}
+
+.hero-content p {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: fadeUp 1.0s ease forwards;
+    animation-delay: .65s;
+}
+
+@keyframes fadeUp {
     from {
         opacity: 0;
         transform: translateY(18px);
